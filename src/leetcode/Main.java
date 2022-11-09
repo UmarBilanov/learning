@@ -36,11 +36,15 @@ public class Main {
 //        List<Integer> res = traversal.preorder(node);
 //        res.forEach(System.out::println);
 
-        TreeNode leftTreeNode = new TreeNode(9);
-        TreeNode rightTreeNode = new TreeNode(20, new TreeNode(15), new TreeNode(7));
-        TreeNode treeNode = new TreeNode(3, leftTreeNode, rightTreeNode);
-        BinaryTreeLevelOrderTraversal treeLevelOrderTraversal = new BinaryTreeLevelOrderTraversal();
-        List<List<Integer>> res = treeLevelOrderTraversal.levelOrder(treeNode);
-        res.forEach(System.out::println);
+//        TreeNode leftTreeNode = new TreeNode(9, new TreeNode(16), new TreeNode(8));
+//        TreeNode rightTreeNode = new TreeNode(20, new TreeNode(15), new TreeNode(7));
+//        TreeNode treeNode = new TreeNode(3, leftTreeNode, rightTreeNode);
+//        BinaryTreeLevelOrderTraversal treeLevelOrderTraversal = new BinaryTreeLevelOrderTraversal();
+//        List<List<Integer>> res = treeLevelOrderTraversal.levelOrderNotCompleted(treeNode);
+//        res.forEach(System.out::println);
+
+        int[] arr = new int[]{1, 4, 6, 8, 9, 12, 19};
+        BinarySearch binarySearch = new BinarySearch();
+        System.out.println(binarySearch.search(arr, 9));
     }
 }
