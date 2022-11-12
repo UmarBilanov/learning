@@ -7,7 +7,18 @@ public class IsSubsequence {
                 return false;
             } else {
                 t = t.substring(t.indexOf(s.substring(i, i+1)) + 1);
-                System.out.println(t);
+            }
+        }
+        return true;
+    }
+
+    public boolean isSubsequence1(String s, String t) {
+        while (s.length() >= 1) {
+            if (!t.contains(s.substring(0,1))){
+                return false;
+            } else {
+                t = t.substring(t.indexOf(s.charAt(0)) + 1);
+                s = s.substring(1);
             }
         }
         return true;

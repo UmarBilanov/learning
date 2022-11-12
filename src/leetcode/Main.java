@@ -23,6 +23,9 @@ public class Main {
 //        System.out.println(longestPalindrome.longestPalindrome("ABCDBCDA"));
 //        1,null,3,2,4,null,5,6
 
+        IsSubsequence isSubsequence = new IsSubsequence();
+        System.out.println(isSubsequence.isSubsequence1("ace", "abcde"));
+
 
 //        List<Node> childNodeList2 = new ArrayList<>();
 //        childNodeList2.add(0,new Node(5));

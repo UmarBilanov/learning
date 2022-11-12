@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.LinkedList;
+
 public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if(list1 == null) return list2;
